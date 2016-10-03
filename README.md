@@ -3,18 +3,24 @@ Blaze
 Provide view for Moving Image and Zooming Image.
 Easy to create continuosly moving background.
 
+View Available
+--------
+#### Zoom View
+
+![gif](Screenshots/zoom_view.gif)
+
+-------
+
+#### Motion View
+![gif](Screenshots/motion_view.gif)
+
+
 Download
 --------
-
 Grab via Gradle:
 ```groovy
 compile 'com.intrusoft.library:blaze:1.0.0'
 ```
-
-View Available
---------
-- Motion View
-- Image View
 
 Implementation
 -----------
