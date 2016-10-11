@@ -3,18 +3,24 @@ Blaze
 Provide view for Moving Image and Zooming Image.
 Easy to create continuosly moving background.
 
+View Available
+--------
+#### Zoom View
+
+![gif](Screenshots/zoom_view.gif)
+
+-------
+
+#### Motion View
+![gif](Screenshots/motion_view.gif)
+
+
 Download
 --------
-
 Grab via Gradle:
 ```groovy
 compile 'com.intrusoft.library:blaze:1.0.0'
 ```
-
-View Available
---------
-- Motion View
-- Image View
 
 Implementation
 -----------
@@ -40,7 +46,7 @@ Implementation
 </FrameLayout>
 ```
 ```xml
-blaze:translation_factor 
+blaze:translation_factor
 <!-- defines the animation speed-->
 ```
 
@@ -48,14 +54,14 @@ blaze:translation_factor
 ```java
 MotionView motionView = (MotionView) findViewById(R.id.motion_view);
 
-// to set image from resources        
+// to set image from resources
 motionView.setImageResource(R.drawable.your_image);
-                
+
 // to set bitmap
 motionView.setImageBitmap(yourBitmap);
-        
+
 // to set the animation speed
-motionView.setTranslationFactor(4);    
+motionView.setTranslationFactor(4);
 ```
 
 ### Zoom View
@@ -81,7 +87,7 @@ motionView.setTranslationFactor(4);
 ```
 
 ```xml
-blaze:translation_factor 
+blaze:translation_factor
 <!-- defines the animation speed-->
 ```
 
@@ -115,4 +121,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
