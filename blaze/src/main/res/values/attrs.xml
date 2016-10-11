@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="src" format="reference" />
+    <attr name="translation_factor" format="float" />
+
+    <declare-styleable name="blaze">
+        <attr name="src" />
+        <attr name="translation_factor" />
+    </declare-styleable>
+</resources>
