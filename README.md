@@ -3,6 +3,11 @@ Blaze
 Provide view for Moving Image and Zooming Image.
 Easy to create continuosly moving background.
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Blaze-blue.svg?style=flat)](http://android-arsenal.com/details/1/4460)
+[![](https://jitpack.io/v/IntruderShanky/Blaze.svg)](https://jitpack.io/#IntruderShanky/Blaze)
+[![Apache License](https://img.shields.io/badge/License-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![API](https://img.shields.io/badge/API-9%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=9)
+[ ![Download](https://api.bintray.com/packages/intrudershanky/maven/Blaze/images/download.svg) ](https://bintray.com/intrudershanky/maven/Blaze/_latestVersion)
 View Available
 --------
 #### Zoom View
@@ -15,11 +20,27 @@ View Available
 ![gif](Screenshots/motion_view.gif)
 
 
-Download
---------
-Grab via Gradle:
+ #Download
+ ###Download via JitPack
+ #####Step 1. Add it in your root build.gradle at the end of repositories:
+ ```groovy
+ allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+        }
+ }
+ ```
+ 
+#####Step 2. Add the dependency
 ```groovy
-compile 'com.intrusoft.library:blaze:1.0.0'
+        compile 'com.github.IntruderShanky:Blaze:2.1.0'
+```
+
+####**OR**
+###Download via Gradle
+```groovy
+compile 'com.intrusoft.library:blaze:2.1.0'
 ```
 
 Implementation
@@ -46,7 +67,7 @@ Implementation
 </FrameLayout>
 ```
 ```xml
-blaze:translation_factor
+blaze:translation_factor 
 <!-- defines the animation speed-->
 ```
 
@@ -54,14 +75,14 @@ blaze:translation_factor
 ```java
 MotionView motionView = (MotionView) findViewById(R.id.motion_view);
 
-// to set image from resources
+// to set image from resources        
 motionView.setImageResource(R.drawable.your_image);
-
+                
 // to set bitmap
 motionView.setImageBitmap(yourBitmap);
-
+        
 // to set the animation speed
-motionView.setTranslationFactor(4);
+motionView.setTranslationFactor(4);    
 ```
 
 ### Zoom View
@@ -87,7 +108,7 @@ motionView.setTranslationFactor(4);
 ```
 
 ```xml
-blaze:translation_factor
+blaze:translation_factor 
 <!-- defines the animation speed-->
 ```
 
@@ -121,3 +142,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
