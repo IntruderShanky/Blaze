@@ -8,6 +8,7 @@ Easy to create continuosly moving background.
 [![Apache License](https://img.shields.io/badge/License-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![API](https://img.shields.io/badge/API-9%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=9)
 [ ![Download](https://api.bintray.com/packages/intrudershanky/maven/Blaze/images/download.svg) ](https://bintray.com/intrudershanky/maven/Blaze/_latestVersion)
+
 View Available
 --------
 #### Zoom View
