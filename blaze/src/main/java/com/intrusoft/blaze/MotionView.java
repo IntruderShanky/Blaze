@@ -51,10 +51,10 @@ public class MotionView extends View {
 
     public void init(final Context context, AttributeSet attrs) {
         this.context = context;
-        TypedArray typeArray = context.obtainStyledAttributes(attrs, R.styleable.blaze, 0, 0);
+        TypedArray typeArray = context.obtainStyledAttributes(attrs, R.styleable.MotionView, 0, 0);
         try {
-            integer = typeArray.getResourceId(R.styleable.blaze_src, R.drawable.place_holder);
-            moveFactor = (int) typeArray.getFloat(R.styleable.blaze_translation_factor, 6);
+            integer = typeArray.getResourceId(R.styleable.MotionView_src, R.drawable.place_holder);
+            moveFactor = (int) typeArray.getFloat(R.styleable.MotionView_translation_factor, 6);
         } finally {
             typeArray.recycle();
         }

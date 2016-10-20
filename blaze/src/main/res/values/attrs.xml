@@ -3,7 +3,13 @@
     <attr name="src" format="reference" />
     <attr name="translation_factor" format="float" />
 
-    <declare-styleable name="blaze">
+    <declare-styleable name="MotionView">
+        <attr name="src" />
+        <attr name="translation_factor" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ZoomView">
         <attr name="src" />
         <attr name="translation_factor" />
     </declare-styleable>

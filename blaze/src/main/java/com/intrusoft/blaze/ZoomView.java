@@ -12,11 +12,11 @@ import android.view.View;
 
 /**
  * Displays an arbitrary image with continuous zoom animation.
- *  The {@link ZoomView} class can load images from various sources (such as resources or bitmap),
- *  takes care of computing its measurement from the image so that it can be used in any layout manager.
+ * The {@link ZoomView} class can load images from various sources (such as resources or bitmap),
+ * takes care of computing its measurement from the image so that it can be used in any layout manager.
  *
- *  @see MotionView
- *
+ * @see MotionView
+ * <p>
  * Created by Intruder Shanky.
  * @since October 2016
  */
@@ -48,10 +48,10 @@ public class ZoomView extends View {
 
     public void init(final Context context, AttributeSet attrs) {
         this.context = context;
-        TypedArray typeArray = context.obtainStyledAttributes(attrs, R.styleable.blaze, 0, 0);
+        TypedArray typeArray = context.obtainStyledAttributes(attrs, R.styleable.ZoomView, 0, 0);
         try {
-            integer = typeArray.getResourceId(R.styleable.blaze_src, R.drawable.place_holder);
-            changeFactor = typeArray.getFloat(R.styleable.blaze_translation_factor, 0.5f);
+            integer = typeArray.getResourceId(R.styleable.ZoomView_src, R.drawable.place_holder);
+            changeFactor = typeArray.getFloat(R.styleable.ZoomView_translation_factor, 0.5f);
         } finally {
             typeArray.recycle();
         }
@@ -107,6 +107,7 @@ public class ZoomView extends View {
 
     /**
      * set zoom factor of image.
+     *
      * @param factor This is the speed of the animation. This value should be between 1 to 8 for best practice.
      */
     public void setTranslationFactor(float factor) {
@@ -115,6 +116,7 @@ public class ZoomView extends View {
 
     /**
      * set image to the {@link ZoomView} from resource Id
+     *
      * @param resId
      */
     public void setImageResource(Integer resId) {
@@ -128,6 +130,7 @@ public class ZoomView extends View {
 
     /**
      * set image to the {@link ZoomView} from bitmap
+     *
      * @param bitmap
      */
     public void setImageBitmap(Bitmap bitmap) {
