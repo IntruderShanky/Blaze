@@ -20,22 +20,21 @@ View Available
 #### Motion View
 ![gif](Screenshots/motion_view.gif)
 
-
- #Download
- ###Download via JitPack
- #####Step 1. Add it in your root build.gradle at the end of repositories:
- ```groovy
- allprojects {
-    repositories {
-        ...
-        maven { url "https://jitpack.io" }
-        }
+#Download
+###Download via JitPack
+#####Step 1. Add it in your root build.gradle at the end of repositories:
+```groovy
+allprojects {
+   repositories {
+       ...
+       maven { url "https://jitpack.io" }
+       }
  }
- ```
+```
  
 #####Step 2. Add the dependency
 ```groovy
-        compile 'com.github.IntruderShanky:Blaze:2.1.0'
+compile 'com.github.IntruderShanky:Blaze:2.1.0'
 ```
 
 ####**OR**
