@@ -11,6 +11,7 @@ Easy to create continuosly moving background.
 
 View Available
 --------
+![Demo App - IS Library](https://play.google.com/store/apps/details?id=com.intrusoft.islibrarydemo)
 #### Zoom View
 
 ![gif](Screenshots/zoom_view.gif)
